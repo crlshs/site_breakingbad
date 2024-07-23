@@ -1,0 +1,46 @@
+
+
+/* root é a raiz, onde fica todas as informações principais, variaveis e etc */
+:root { 
+    --bg-primary: #000000;
+    --text-light: #FFFFFF;
+    --text-dark: #1D1D1F;
+    --title-primary-color: #F5F5F7;
+    --subtitle-color: #6E6E73;
+    --action-color: #2997FF;
+    --spirited-main-color: #DED2B9;
+}
+
+header {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    height: fit-content;
+    opacity: 0.9;
+    position: sticky;
+    /* position sticky significa que o header vai sempre aparecer na pagina independente do scroll */
+    top: 0;
+    /* posicao onde vai ficar o header, no topo da pagina */
+    z-index: 1;
+    /* prioridade sobre outras coisas no site, o header sobrepõe tudo para sempre estar visível*/
+    padding: 12px 0;
+}
+
+header nav ul{
+    margin: 0 auto;
+    /* centraliza a nav no meio da tela*/
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* espaço entre itens da lista */
+    padding: 0 2rem;
+}
+
+header nav ul li{
+    min-height: fit-content;
+    height: fit-content;
+    padding: 0 0.75rem;
+    font-size: small;
+    cursor: pointer;
+    list-style: none;
+}
