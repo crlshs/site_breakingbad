@@ -1,4 +1,8 @@
-
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
 
 /* root é a raiz, onde fica todas as informações principais, variaveis e etc */
 :root { 
@@ -23,6 +27,7 @@ header {
     z-index: 1;
     /* prioridade sobre outras coisas no site, o header sobrepõe tudo para sempre estar visível*/
     padding: 12px 0;
+    font-family: "San Francisco";
 }
 
 header nav ul{
