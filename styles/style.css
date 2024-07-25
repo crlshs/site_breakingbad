@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "San Francisco";
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
-
 /* root é a raiz, onde fica todas as informações principais, variaveis e etc */
 :root { 
     --bg-primary: #000000;
@@ -24,10 +18,9 @@ header {
     /* position sticky significa que o header vai sempre aparecer na pagina independente do scroll */
     top: 0;
     /* posicao onde vai ficar o header, no topo da pagina */
-    z-index: 1;
+    z-index: 999;   
     /* prioridade sobre outras coisas no site, o header sobrepõe tudo para sempre estar visível*/
     padding: 12px 0;
-    font-family: "San Francisco";
 }
 
 header nav ul{
@@ -51,9 +44,8 @@ header nav ul li{
 }
 
 .video-container {
-    position: absolute;
-    display: inline-block;
-    /* overflow: hidden; */
+    position: relative;
+    overflow: hidden;
 }
 
 .fade-video::after {
@@ -64,4 +56,20 @@ header nav ul li{
     height: 99.9%;
     content: '';
     background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.43580759940695024) 67%, rgba(197,197,197,0) 100%);
+}
+
+.uma-escolha, .grandes-perigos{
+    color: white;
+    font-size: 90px;
+    position: absolute;
+}
+
+.uma-escolha{
+    padding-top: 60px;
+}
+
+.grandes-perigos{
+    padding-top: 590px;
+    width: 100%;
+    text-align: right;
 }
