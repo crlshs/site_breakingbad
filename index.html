@@ -13,38 +13,91 @@
 <body>
 
     <!-- header -->
-    <iframe src="/header.html" frameborder="0" scrolling="no"></iframe>
+    <iframe src="/header.html" frameborder="0" scrolling="no" id="header"></iframe>
+
 
     <main>
-        <div class="video-container">
-            <h1 class="uma-escolha">UMA ESCOLHA</h1>
-            <h1 class="grandes-perigos">GRANDES PERIGOS</h1>
+        <div id="video-container">
+            <h1 id="uma-escolha" class="texto-video">UMA ESCOLHA</h1>
 
-            <video src="public/assets/walter-white-video.mp4" autoplay muted loop></video>
+            <img src="/public/assets/logo bw.svg" alt="logo do breaking bad" id="logobw">
+
+            <h3 id="fan-page" class="texto-video">Fan Page</h3>
+
+            <h1 id="grandes-perigos" class="texto-video">GRANDES PERIGOS</h1>
+
+            <video src="public/assets/video/walter-white-video.mp4" autoplay muted loop></video>
             <div class="fade-video"></div>
 
         </div>
 
+        <section id="frases-section">
+            <div id="resumao">
+                <h1 id="titulo-bb" class="textos-resumo">Breaking Bad</h1>
+                <p id="resumo-bb" class="textos-resumo">Um professor de química do ensino médio com câncer <br> de pulmão se
+                    junta a um ex-aluno e garante o futuro de sua <br> família produzindo e vendendo metanfetamina.
+                </p>
+            </div>
+        </section>
+
+        <section id="carrossel-section">
+            <div id="carrossel">
+                <div class="item" style="--delay: 2s">
+                    <img src="./public/assets/carrossel-index/Walter 1.svg" alt="walter white">
+                    </img>
+                </div>
+
+                <div class="item" style="--delay: 4s">
+                    <img src="./public/assets/carrossel-index/Saul 1.svg" alt="saul goodman">
+                    </img>
+                </div>
+
+                <div class="item" style="--delay: 6s">
+                    <img src="./public/assets/carrossel-index/Jesse.svg" alt="jesse pinkman">
+                    </img>
+                </div>
+
+                <div class="item" style="--delay: 8s">
+                    <img src="./public/assets/carrossel-index/Saul 2.svg" alt="saul goodman">
+                    </img>
+                </div>
+
+                <div class="item" style="--delay: 10s">
+                    <img src="./public/assets/carrossel-index/Walter 2.svg" alt="walter white">
+                    </img>
+                </div>
+
+                <div class="item" style="--delay: 12s">
+                    <img src="./public/assets/carrossel-index/Gustavo fring.svg" alt="gustavo fring">
+                    </img>
+                </div>
+
+            </div>
+
+        </section>
+
+
         <section id="conteudos">
+            <h1 id="saiba-mais">SAIBA MAIS DA SÉRIE</h1>
 
             <article>
                 <div class="containers-pages" id="sobre">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/sobre.svg" alt="Logo da série breaking bad">
+                        <img src="/public/assets/retangulos-index/sobre.svg" alt="Logo da série breaking bad">
                         <h1 class="textos-a" id="texto-sobre" id="texto-sobre">SOBRE</h1>
                     </a>
                 </div>
 
                 <div class="containers-pages" id="personagens">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/personagens.svg" alt="Walter White e Jesse pinkman">
+                        <img src="/public/assets/retangulos-index/personagens.svg" alt="Walter White e Jesse pinkman">
                         <h1 class="textos-a" id="texto-personagens">PERSO<br>NAGENS</h1>
                     </a>
 
                 </div>
                 <div class="containers-pages" id="cancer-drogas">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/metilamina.svg" alt="Icone da metilamina da série breaking bad">
+                        <img src="/public/assets/retangulos-index/metilamina.svg" alt="Icone da metilamina da série breaking bad">
                         <h1 class="textos-a" id="texto-drogas">CÂNCER E DROGAS</h1>
                     </a>
 
@@ -54,14 +107,14 @@
             <aside>
                 <div class="containers-pages" id="mensagem">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/mensagem-icon.svg" alt="Imagem do walter white">
+                        <img src="/public/assets/retangulos-index/mensagem-icon.svg" alt="Imagem do walter white">
                         <h1 class="textos-a" id="texto-mensagem">MENSAGEM</h1>
                     </a>
                 </div>
 
                 <div class="containers-pages" id="spin-off">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/spin-off.svg" alt="Imagem do elenco de better call saul">
+                        <img src="/public/assets/retangulos-index/spin-off.svg" alt="Imagem do elenco de better call saul">
                         <h1 class="textos-a">SPIN-OFF</h1>
                     </a>
 
@@ -69,18 +122,19 @@
 
                 <div class="containers-pages" id="premios">
                     <a href="pages/sobre.html" target="_blank">
-                        <img src="/public/assets/premios.svg" alt="Imagem do elenco da série segurando os prêmios">
+                        <img src="/public/assets/retangulos-index/premios.svg" alt="Imagem do elenco da série segurando os prêmios">
                         <h1 class="textos-a">PREMIOS</h1>
                     </a>
 
                 </div>
             </aside>
 
-
         </section>
+    
 
     </main>
 
+    <iframe src="/footer.html" frameborder="0" scrolling="no" style="bottom: 0;" id="footer"></iframe>
 </body>
 
 </html>
