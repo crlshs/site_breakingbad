@@ -9,12 +9,14 @@ body{
     font-size: 62.5%;
 } 
 
+
 * {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     font-family: "San Francisco";
     color: white;
+    scrollbar-width: none;
 }
 
 header, footer{
