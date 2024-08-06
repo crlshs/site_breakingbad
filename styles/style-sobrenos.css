@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.league-gothic {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"width" 100;
+}
+
+#imagem1{
+    width: 100%;
+}
+
+#imagem1:hover{
+    filter: grayscale(1);
+}
+.texto1{
+    width: 100%;
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-size: 4rem;
+}
+#titulo{
+    font-family: "Anton", sans-serif;
+    font-size: 5rem;
+    color: rgb(224, 171, 0);
+}
+.texto2{
+    display: flex;
+    font-family: "League Gothic", sans-serif;
+    font-size: 4rem;
+    justify-content: center;
+}
+
+#imagem2{
+    width: 45%;
+}
+
+#texto2-1{
+    padding: 25% 0 25% 0;
+    font-family: "Anton", sans-serif;
+    color: rgb(224, 171, 0);
+}
