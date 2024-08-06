@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+.anton-reg#esquerdaar {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.league-gothic {
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+p {
+    font-family: "Anton", sans-serif;
+    font-size: 5rem;
+}
+
+#topo {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+#texto-topo {
+    color: rgb(224, 171, 0);
+    font-family: "League Gothic", sans-serif;
+    font-size: 8rem;
+    bottom: 0;
+    position: absolute;
+}
+
+#emmy-listas{
+    display: flex;
+}
+
+#esquerda, #direita {
+    position: relative;
+}
+
+#esquerda li, #direita li {
+    font-size: 3rem;
+    position: relative;
+    left: 0;
+    color: #fce4ec;
+    list-style: none;
+    margin: 4px 0;
+    border-left: 2px solid rgb(224, 171, 0);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#direita li{
+    right: 0;
+    left: none;
+    border-left: none;
+    border-right: 2px solid rgb(224, 171, 0);
+}
+
+#esquerda li:hover {
+    left: 10px;
+}
+
+
+#esquerda li span, #direita li span {
+    font-family: "League Gothic", sans-serif;
+    position: relative;
+    padding: 8px;
+    padding-left: 12px;
+    display: inline-block;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#direita li span {
+    padding: 0 12px 0 0;
+}
+
+#esquerda li:hover span, #direita li:hover span {
+    color: #111;
+}
+
+#esquerda li:before, #direita li:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgb(224, 171, 0);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+}
+#direita li:before {
+    width: 100%;
+}
+
+#esquerda li:hover:before, #direita li:hover:before {
+    transform: scaleX(1);
+}
+
+#anos{
+    display: flex;
+    gap: 38%;
+}

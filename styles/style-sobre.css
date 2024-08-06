@@ -87,3 +87,45 @@ hr{
     width: 100%;
     height: 5px;
 }
+
+#temp2{
+    width: 100vw;
+    text-align: center;
+}
+
+#texto3{
+    width: 95vw;
+    text-align: right;
+}
+
+#temp3 video{
+    filter: grayscale(1);
+    width: 100vw;
+}
+
+#imagem-b{
+    width: 840px;
+}
+
+#temp5{
+    position: relative;
+}
+
+#felina-imagem{
+    width: 100%;
+    text-align: right;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+#texto-felina{
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 250px;
+    z-index: 997;
+}
+
+#felina-video{
+    width: 100%;
+}
