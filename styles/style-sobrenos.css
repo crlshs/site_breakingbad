@@ -13,40 +13,124 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:"width" 100;
+    font-variation-settings: "width" 100;
 }
 
-#imagem1{
+#imagem1 {
+    filter: grayscale(1);
     width: 100%;
 }
 
-#imagem1:hover{
-    filter: grayscale(1);
-}
-.texto1{
+.texto1 {
     width: 100%;
     text-align: center;
     font-family: "League Gothic", sans-serif;
     font-size: 4rem;
 }
-#titulo{
+
+#titulo {
     font-family: "Anton", sans-serif;
     font-size: 5rem;
     color: rgb(224, 171, 0);
 }
-.texto2{
+
+.texto2 {
     display: flex;
     font-family: "League Gothic", sans-serif;
     font-size: 4rem;
     justify-content: center;
 }
 
-#imagem2{
+#imagem2 {
     width: 45%;
 }
 
-#texto2-1{
+#texto2-1 {
     padding: 25% 0 25% 0;
     font-family: "Anton", sans-serif;
     color: rgb(224, 171, 0);
+}
+
+/* form */
+
+form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+#form-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    color: rgb(224, 171, 0);
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #000000;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: rgb(224, 171, 0);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid rgb(224, 171, 0);
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: "League Gothic", sans-serif;
+    font-size: 2rem;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.radioclass {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
 }
